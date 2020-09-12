@@ -111,7 +111,7 @@ public void getInstructions() {
 		RestAssured.baseURI = BaseURI;
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.get("users");
-     	 System.out.println("5.Request Endpoint url is : " +BaseURI+ "users");
+     	        System.out.println("5.Request Endpoint url is : " +BaseURI+ "users");
 		int statusCode = response.getStatusCode();
 		System.out.println("Status code is:" + statusCode);
 		Assert.assertEquals(statusCode, 200);
@@ -129,7 +129,7 @@ public void getInstructions() {
 		System.out.println("Array count is: " + count);
 		Assert.assertEquals(count, 1000);
 
-		System.out.println("Response body is: " + responsestring);
+		//System.out.println("Response body is: " + responsestring);
 		System.out.println("-------------------------------------");
 	} 
 		 
